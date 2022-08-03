@@ -8,8 +8,8 @@ body {
 }
 .box {
   box-sizing: border-box;
-  margin-top: 900vh;
-  margin-left: 80vh;
+  margin-top: -45vw;
+  margin-left: 90vh;
   margin-right: 90vh;
   width: 153px;
   height: 153px;
@@ -17,13 +17,12 @@ body {
   box-shadow: -3px -3px 7px #3b3e49, #212227;
   border-radius: 50%;
   background-color: #3b3e49;
-  margin-top: 50px;
   overflow: hidden;
   transition: all 1s;
 }
-.box:hover {
+.box {
   width: 360px;
-  height: 90%;
+  height: 40vw;
   border-radius: 5px;
 }
 img {
@@ -38,7 +37,7 @@ img {
   overflow: hidden;
   transition: all 1s;
 }
-.box:hover img {
+.box img {
   width: 100px;
   height: 100px;
   margin: 20px 35%;
@@ -52,9 +51,10 @@ input[type="text"],
 input[type="email"],
 input[type="number"] {
   display: block;
-  box-sizing: border-box;
-  color: #3498db;
+  /* box-sizing: border-box; */
+  color: white;
   margin-bottom: 30px;
+  border-radius: 2vh;
   padding: 4px;
   width: 220px;
   height: 32px;
@@ -73,7 +73,7 @@ input[type="email"]:focus,
 input[type="number"]:focus {
   border-bottom: 2px solid #3498db;
   border-bottom-right-radius: 20px;
-  color: #3498db;
+  color: white;
   transition: 0.2s ease;
   background: black;
   border-top: none;
