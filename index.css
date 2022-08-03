@@ -1,0 +1,90 @@
+/* All-Users */
+.all-users-container {
+	display: flex;
+	color: #1a1a1a;
+	font-family: "Mingzat", sans-serif;
+}
+.heddings {
+	font-size: 2rem;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+.all-users-content {
+	width: 100%;
+}
+.all-users-tables {
+	display: flex;
+	justify-content: space-evenly;
+}
+/* All Users Table*/
+.all-users-table {
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 1.3em;
+	min-width: 300px;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.all-users-table thead tr {
+	background-color: #009879;
+	color: #ffffff;
+	text-align: left;
+	font-weight: bold;
+}
+.all-users-table th,
+.all-users-tables td {
+	padding: 12px 10px;
+	color: white;
+}
+.all-users-table table,
+th,
+td {
+	border: 2px solid #3b3e49;
+}
+
+/* Edit Profile */
+.edit-profile-container {
+	display: flex;
+	color: #1a1a1a;
+	font-family: "Mingzat", sans-serif;
+}
+.edit-profile-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.edit-profile-box {
+	box-sizing: border-box;
+	border: 2px solid #3498db;
+	box-shadow: -3px -3px 7px #3b3e49, #212227;
+	background-color: #3b3e49;
+	overflow: hidden;
+}
+.edit-profile-image {
+	box-sizing: border-box;
+	width: 149px;
+	height: 149px;
+	border-radius: 50%;
+	margin: 0;
+	border: 5px solid #0082e6;
+	padding: 3px;
+	background-color: white;
+	overflow: hidden;
+}
+.edit-profile-input {
+	color: white;
+	margin-bottom: 30px;
+	border-radius: 2vh;
+	padding: 4px;
+	width: 220px;
+	height: 32px;
+	border: none;
+	border-bottom: 1px solid #0082e6;
+	font-weight: 400;
+	font-size: 15px;
+	transition: 0.2s ease;
+	background: none;
+}
