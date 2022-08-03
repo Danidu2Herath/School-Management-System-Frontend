@@ -54,15 +54,12 @@
       </nav>
       <div class="edit-profile-content">
         <div class="edit-profile-box">
-          <img src="./images/avatar.png" class="edit-profile-image">
+          <div class="edit-profile-avatar-container">
+            <img src="./images/avatar.png" class="edit-profile-image">
+          </div>
           <div class="edit-profile-input-group">
-            <input
-              class="edit-profile-input"
-              type="file"
-              id="file"
-              name="image"
-            >
-            <label for="file">Change Profile Picture</label>
+            <!-- TODO Add a pen icon to change profile picture -->
+            <label class="edit-profile-label" for="username">Change User Name</label>
             <input
               class="edit-profile-input"
               type="text"
@@ -70,8 +67,8 @@
               name=""
             >
           </div>
-          <button>CANCEL</button>
-          <button name="done">DONE</button>
+          <button class="edit-profile-btn">CANCEL</button>
+          <button class="edit-profile-btn">DONE</button>
         </div>
       </div>
     </div>
