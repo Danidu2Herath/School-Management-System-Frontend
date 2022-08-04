@@ -1,142 +1,222 @@
 body {
-	background-color: #1a1a1a;
-	font-family: "Mingzat", sans-serif;
-	background-size: cover;
+  background-color: #1a1a1a;
+  font-family: "Mingzat", sans-serif;
+  background-size: cover;
 }
-/** All-Users **/
 /*<=====================================================>*/
+/*Scroll Bar */
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/*<=====================================================>*/
+
+/*<=====================================================>*/
+/** All-Users **/
+
 .all-users-container {
-	display: flex;
-	color: #1a1a1a;
-	font-family: "Mingzat", sans-serif;
+  display: flex;
+  color: #1a1a1a;
+  font-family: "Mingzat", sans-serif;
 }
 .heddings {
-	font-size: 2rem;
-	font-weight: bold;
-	color: white;
-	text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
 .all-users-content {
-	width: 100%;
+  width: 100%;
 }
 .all-users-tables {
-	display: flex;
-	justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 /* All Users Table*/
 .all-users-table {
-	border-collapse: collapse;
-	margin: 25px 0;
-	font-size: 1.3em;
-	min-width: 300px;
-	border-radius: 5px 5px 0 0;
-	overflow: hidden;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.3em;
+  min-width: 300px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 .all-users-table thead tr {
-	background-color: #009879;
-	color: #ffffff;
-	text-align: left;
-	font-weight: bold;
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
 }
 .all-users-table th,
 .all-users-tables td {
-	padding: 12px 10px;
-	color: white;
+  padding: 12px 10px;
+  color: white;
 }
 .all-users-table table,
 th,
 td {
-	border: 2px solid rgb(160, 160, 160);
+  border: 2px solid rgb(160, 160, 160);
 }
+/*<=====================================================>*/
 
+/*<=====================================================>*/
 /* Edit Profile */
 .edit-profile-containe {
-	display: flex;
+  display: flex;
 }
 .edit-profile-content {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .edit-profile-box {
-	width: 400px;
-	padding: 40px;
-	background: rgba(0, 0, 0, 0.5);
-	box-sizing: border-box;
-	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-	border-radius: 10px;
+  width: 400px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
 .edit-profile-hedding {
-	margin-bottom: 30px;
-	color: #fff;
-	text-align: center;
-	color: #ff2f2f;
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: center;
+  color: #ff2f2f;
 }
 /* fancy effect when clicking on input button */
 .edit-profile-box .edit-profile-input-group {
-	position: relative;
+  position: relative;
 }
 .edit-profile-box .edit-profile-input-group input {
-	width: 100%;
-	padding: 10px 0;
-	font-size: 16px;
-	color: #fff;
-	margin-bottom: 30px;
-	border: none;
-	border-bottom: 1px solid #fff;
-	outline: none;
-	background: transparent;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
 }
 .edit-profile-box .edit-profile-input-group label {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 10px 0;
-	font-size: 16px;
-	color: #fff;
-	pointer-events: none;
-	transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
 }
 .edit-profile-box .edit-profile-input-group input:focus ~ label,
 .edit-profile-box .edit-profile-input-group input:valid ~ label {
-	top: -20px;
-	left: 0;
-	color: #2ea101;
-	font-size: 12px;
+  top: -20px;
+  left: 0;
+  color: #2ea101;
+  font-size: 12px;
 }
 /* avatar */
 .edit-profile-avatar-container {
-	width: 100%;
-	display: flex;
-	justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .edit-profile-image {
-	box-sizing: border-box;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	padding: 3px;
-	background-color: white;
-	overflow: hidden;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: white;
+  overflow: hidden;
 }
 /* buttons */
 .edit-profile-buttons {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .edit-profile-cancel-btn,
 .edit-profile-done-btn {
-	width: 130px;
-	background: #1bb694;
-	font-size: 1rem;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 1px;
-	padding: 10px 20px;
-	border-radius: 5px;
+  width: 130px;
+  background: #1bb694;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
-/* User-Old-Attendences */
+/* admin-old-attendence- */
+/*<=====================================================>*/
+.admin-old-attendence-container {
+  display: flex;
+  color: #1a1a1a;
+  font-family: "Mingzat", sans-serif;
+}
+.admin-old-attendence-heddings {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.admin-old-attendence-content {
+  width: 100%;
+}
+.admin-old-attendence-tables {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* All Users Table*/
+.admin-old-attendence-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.3em;
+  min-width: 300px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.admin-old-attendence-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+.admin-old-attendence-table th,
+.admin-old-attendence-tables td {
+  padding: 12px 10px;
+  color: white;
+}
+.admin-old-attendence-table table,
+th,
+td {
+  border: 2px solid rgb(160, 160, 160);
+}
+/*<=====================================================>*/
