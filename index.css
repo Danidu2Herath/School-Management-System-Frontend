@@ -65,18 +65,15 @@ td {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
-
 .edit-profile-box h2 {
   margin: 0 0 30px;
   padding: 0;
   color: #fff;
   text-align: center;
 }
-
 .edit-profile-box .user-box {
   position: relative;
 }
-
 .edit-profile-box .user-box input {
   width: 100%;
   padding: 10px 0;
@@ -98,7 +95,6 @@ td {
   pointer-events: none;
   transition: 0.5s;
 }
-
 .edit-profile-box .user-box input:focus ~ label,
 .edit-profile-box .user-box input:valid ~ label {
   top: -20px;
@@ -106,7 +102,6 @@ td {
   color: #2ea101;
   font-size: 12px;
 }
-
 .edit-profile-box form a {
   position: relative;
   display: inline-block;
@@ -119,62 +114,24 @@ td {
   margin-top: 40px;
   letter-spacing: 4px;
 }
-
 .edit-profile-box a span {
   position: absolute;
   display: block;
 }
-
-@keyframes btn-anim1 {
-  0% {
-    left: -100%;
-  }
-  50%,
-  100% {
-    left: 100%;
-  }
-}
-
-@keyframes btn-anim2 {
-  0% {
-    top: -100%;
-  }
-  50%,
-  100% {
-    top: 100%;
-  }
-}
-@keyframes btn-anim3 {
-  0% {
-    right: -100%;
-  }
-  50%,
-  100% {
-    right: 100%;
-  }
-}
-
-@keyframes btn-anim4 {
-  0% {
-    bottom: -100%;
-  }
-  50%,
-  100% {
-    bottom: 100%;
-  }
-}
-
 .edit-profile-image {
   box-sizing: border-box;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin: 0;
-  margin-top: 10px;
-  /* border: 4px solid #0082e6; */
+  margin-left: 110px;
+  margin-top: -250px;
   padding: 3px;
   background-color: white;
   overflow: hidden;
+}
+.edit-profile-box-heading h2 {
+  color: #ff2f2f;
 }
 .cancel-btn,
 .done-btn {
