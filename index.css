@@ -3,38 +3,29 @@ body {
 	font-family: "Mingzat", sans-serif;
 	background-size: cover;
 }
-/*<=====================================================>*/
+
 /*Scroll Bar */
-
 /* width */
-
 ::-webkit-scrollbar {
 	width: 13px;
 }
-
 /* Track */
-
 ::-webkit-scrollbar-track {
 	background: transparent;
 	margin: 10px;
 	margin-bottom: 10px;
 }
-
 /* Handle */
-
 ::-webkit-scrollbar-thumb {
 	background: #888;
 	border-radius: 10px;
 }
-
 /* Handle on hover */
-
 ::-webkit-scrollbar-thumb:hover {
 	background: #555;
 }
 /*<=====================================================>*/
 
-/*<=====================================================>*/
 /** All-Users **/
 
 .all-users-container {
@@ -83,8 +74,7 @@ td {
 }
 /*<=====================================================>*/
 
-/*<=====================================================>*/
-/* Edit Profile */
+/** Edit Profile **/
 .edit-profile-containe {
 	display: flex;
 }
@@ -172,9 +162,9 @@ td {
 	padding: 10px 20px;
 	border-radius: 5px;
 }
-
-/* admin-old-attandance- */
 /*<=====================================================>*/
+
+/** admin-old-attandance **/
 .admin-old-attandance-container {
 	display: flex;
 	color: #1a1a1a;
