@@ -103,7 +103,7 @@ td {
 .edit-profile-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: #03e9f4;
+  color: #2ea101;
   font-size: 12px;
 }
 
@@ -192,5 +192,8 @@ td {
   border-radius: 5px;
   cursor: pointer;
 }
-
+.cancel-btn:hover,
+.done-btn:hover {
+  background: #1bb694;
+}
 /*<=====================================================>*/
