@@ -1,156 +1,142 @@
 body {
-  background-color: #1a1a1a;
-  font-family: "Mingzat", sans-serif;
-  background-size: cover;
+	background-color: #1a1a1a;
+	font-family: "Mingzat", sans-serif;
+	background-size: cover;
 }
 /** All-Users **/
 /*<=====================================================>*/
 .all-users-container {
-  display: flex;
-  color: #1a1a1a;
-  font-family: "Mingzat", sans-serif;
+	display: flex;
+	color: #1a1a1a;
+	font-family: "Mingzat", sans-serif;
 }
 .heddings {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: white;
+	text-align: center;
 }
 .all-users-content {
-  width: 100%;
+	width: 100%;
 }
 .all-users-tables {
-  display: flex;
-  justify-content: space-evenly;
+	display: flex;
+	justify-content: space-evenly;
 }
 /* All Users Table*/
 .all-users-table {
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 1.3em;
-  min-width: 300px;
-  border-radius: 5px 5px 0 0;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 1.3em;
+	min-width: 300px;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 .all-users-table thead tr {
-  background-color: #009879;
-  color: #ffffff;
-  text-align: left;
-  font-weight: bold;
+	background-color: #009879;
+	color: #ffffff;
+	text-align: left;
+	font-weight: bold;
 }
 .all-users-table th,
 .all-users-tables td {
-  padding: 12px 10px;
-  color: white;
+	padding: 12px 10px;
+	color: white;
 }
 .all-users-table table,
 th,
 td {
-  border: 2px solid rgb(160, 160, 160);
+	border: 2px solid rgb(160, 160, 160);
 }
-/*<=====================================================>*/
 
-/** Edit Profile **/
-/*<=====================================================>*/
+/* Edit Profile */
+.edit-profile-containe {
+	display: flex;
+}
+.edit-profile-content {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .edit-profile-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  padding: 40px;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.5);
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
+	width: 400px;
+	padding: 40px;
+	background: rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
 }
-.edit-profile-box h2 {
-  margin: 0 0 30px;
-  padding: 0;
-  color: #fff;
-  text-align: center;
+.edit-profile-hedding {
+	margin-bottom: 30px;
+	color: #fff;
+	text-align: center;
+	color: #ff2f2f;
 }
-.edit-profile-box .user-box {
-  position: relative;
+/* fancy effect when clicking on input button */
+.edit-profile-box .edit-profile-input-group {
+	position: relative;
 }
-.edit-profile-box .user-box input {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #fff;
-  outline: none;
-  background: transparent;
+.edit-profile-box .edit-profile-input-group input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
 }
-.edit-profile-box .user-box label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  pointer-events: none;
-  transition: 0.5s;
+.edit-profile-box .edit-profile-input-group label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: 0.5s;
 }
-.edit-profile-box .user-box input:focus ~ label,
-.edit-profile-box .user-box input:valid ~ label {
-  top: -20px;
-  left: 0;
-  color: #2ea101;
-  font-size: 12px;
+.edit-profile-box .edit-profile-input-group input:focus ~ label,
+.edit-profile-box .edit-profile-input-group input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: #2ea101;
+	font-size: 12px;
 }
-.edit-profile-box form a {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  margin-top: 40px;
-  letter-spacing: 4px;
-}
-.edit-profile-box a span {
-  position: absolute;
-  display: block;
+/* avatar */
+.edit-profile-avatar-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 .edit-profile-image {
-  box-sizing: border-box;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 0;
-  margin-left: 110px;
-  margin-top: -250px;
-  padding: 3px;
-  background-color: white;
-  overflow: hidden;
+	box-sizing: border-box;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	padding: 3px;
+	background-color: white;
+	overflow: hidden;
 }
-.edit-profile-box-heading h2 {
-  color: #ff2f2f;
+/* buttons */
+.edit-profile-buttons {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
-.cancel-btn,
-.done-btn {
-  width: 130px;
-  margin-left: 20px;
-  display: block;
-  border: none;
-  outline: none;
-  background: #1bb694;
-  font-size: 1rem;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+.edit-profile-cancel-btn,
+.edit-profile-done-btn {
+	width: 130px;
+	background: #1bb694;
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+	padding: 10px 20px;
+	border-radius: 5px;
 }
-.cancel-btn:hover,
-.done-btn:hover {
-  background: #1bb694;
-}
-/*<=====================================================>*/
+
+/* User-Old-Attendences */

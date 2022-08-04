@@ -1,89 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Edit Profile</title>
-        <link rel="stylesheet" href="./index.css">
-        <link rel="stylesheet" href="./css/nav-bar.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Mingzat&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li>
-                    <a class="logo">
-                        <img src="../images/avatar.png">
-                        <span class="nav-item Admin-name">Username</span>
-                    </a>
-                </li>
-                <!-- <li>
-        <a href="#">
-          <i class="fas fa-menorah"></i>
-          <span class="nav-item">Dashboard</span>
-        </a>
-      </li> -->
-                <li>
-                    <a href="../Chat App/Admin.html">
-                        <i class="fas fa-comment"></i>
-                        <span class="nav-item">Message</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="../registered-users.html">
-                        <i class="fas fa-database"></i>
-                        <span class="nav-item">Users</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="../Attendence PI Graph/Attendence.html">
-                        <i class="fas fa-chart-bar"></i>
-                        <span class="nav-item">Attendance</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="../Edit Profile.html">
-                        <i class="fas fa-cog"></i>
-                        <span class="nav-item">Edit Profile</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="../Login.html" class="logout">
-                        <i class="fas fa-sign-out-alt"></i>
-                        <span class="nav-item">Log out</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <!-- partial:index.partial.html -->
+  <head>
+    <meta charset="UTF-8">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/nav-bar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mingzat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="edit-profile-containe">
+      <nav>
+        <ul>
+          <li>
+            <a class="logo">
+              <img src="../images/avatar.png">
+              <span class="nav-item Admin-name">Username</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Chat App/Admin.html">
+              <i class="fas fa-comment"></i>
+              <span class="nav-item">Message</span>
+            </a>
+          </li>
+          <li>
+            <a href="../registered-users.html">
+              <i class="fas fa-database"></i>
+              <span class="nav-item">Users</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Attendence PI Graph/Attendence.html">
+              <i class="fas fa-chart-bar"></i>
+              <span class="nav-item">Attendance</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Edit Profile.html">
+              <i class="fas fa-cog"></i>
+              <span class="nav-item">Edit Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Login.html" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Log out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="edit-profile-content">
         <div class="edit-profile-box">
-            <form class="edit-profile-box-heading">
-                <img src="./images/avatar.png" class="edit-profile-image">
-                <h2>Edit Profile</h2>
-            </form>
-            <form>
-                <div class="user-box">
-                    <input type="password" name="" required="">
-                    <label>Username</label>
-                </div>
-                <a for="cancel-btn" class="cancel-btn" href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Cancel
-                </a>
-                <a for="done-btn" class="done-btn" href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Done
-                </a>
-            </form>
+          <form>
+            <div class="edit-profile-avatar-container">
+              <img src="./images/avatar.png" class="edit-profile-image">
+            </div>
+            <h2 class="edit-profile-hedding">Edit Profile</h2>
+            <div class="edit-profile-input-group">
+              <input type="password" name="" required="">
+              <label>Username</label>
+            </div>
+            <div class="edit-profile-buttons">
+              <a for="cancel-btn" class="edit-profile-cancel-btn" href="#">
+                Cancel
+              </a>
+              <a for="done-btn" class="edit-profile-done-btn" href="#">
+                Done
+              </a>
+            </div>
+          </form>
         </div>
-        <!-- partial -->
-    </body>
+      </div>
+    </div>
+  </body>
 </html>

@@ -8,3 +8,7 @@ random avater genarator,
 # Colors
 
 Select Suitable Colors and Let me know about it
+
+# bug
+
+css styles overlaping in Edit Profile.html file's buttons with navbar hover effect
