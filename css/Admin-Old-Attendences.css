@@ -65,3 +65,31 @@ td {
   color: white;
   text-align: center;
 }
+/*Scroll Bar */
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
