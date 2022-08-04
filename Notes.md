@@ -5,8 +5,6 @@ Default avater,
 design by admins,
 random avater genarator,
 
-# Bug in Chat app UI's
+# Colors
 
-try to fix it @Thevindu-Senanayake, @nirmal-developer
-
-# Bug in responsivenes issues
+Select Suitable Colors and Let me know about it
