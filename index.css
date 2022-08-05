@@ -24,6 +24,97 @@ body {
 ::-webkit-scrollbar-thumb:hover {
 	background: #555;
 }
+/* hide spiners in number inputs */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+/* avatar */
+.avatar-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.avatar {
+	box-sizing: border-box;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	padding: 3px;
+	background-color: white;
+	overflow: hidden;
+}
+/* Global */
+
+.content {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.btn {
+	width: 130px;
+	background: #1bb694;
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+.btn-group {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.hedding {
+	margin-bottom: 30px;
+	text-align: center;
+	color: #ff2f2f;
+}
+.input-box {
+	width: 400px;
+	padding: 40px;
+	background: rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+}
+/* fancy effect when clicking on input button */
+.input-box .input-with-label {
+	position: relative;
+}
+.input-box .input-with-label input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+.input-box .input-with-label label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.input-box .input-with-label input:focus ~ label,
+.input-box .input-with-label input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: #2ea101;
+	font-size: 12px;
+}
 /*<=====================================================>*/
 
 /** All-Users **/
@@ -75,93 +166,11 @@ td {
 /*<=====================================================>*/
 
 /** Edit Profile **/
-.edit-profile-containe {
+.edit-profile-container {
 	display: flex;
-}
-.edit-profile-content {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.edit-profile-box {
-	width: 400px;
-	padding: 40px;
-	background: rgba(0, 0, 0, 0.5);
-	box-sizing: border-box;
-	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-	border-radius: 10px;
-}
-.edit-profile-hedding {
-	margin-bottom: 30px;
-	color: #fff;
-	text-align: center;
-	color: #ff2f2f;
-}
-/* fancy effect when clicking on input button */
-.edit-profile-box .edit-profile-input-group {
-	position: relative;
-}
-.edit-profile-box .edit-profile-input-group input {
-	width: 100%;
-	padding: 10px 0;
-	font-size: 16px;
-	color: #fff;
-	margin-bottom: 30px;
-	border: none;
-	border-bottom: 1px solid #fff;
-	outline: none;
-	background: transparent;
-}
-.edit-profile-box .edit-profile-input-group label {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 10px 0;
-	font-size: 16px;
-	color: #fff;
-	pointer-events: none;
-	transition: 0.5s;
-}
-.edit-profile-box .edit-profile-input-group input:focus ~ label,
-.edit-profile-box .edit-profile-input-group input:valid ~ label {
-	top: -20px;
-	left: 0;
-	color: #2ea101;
-	font-size: 12px;
 }
 /* avatar */
-.edit-profile-avatar-container {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-}
-.edit-profile-image {
-	box-sizing: border-box;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	padding: 3px;
-	background-color: white;
-	overflow: hidden;
-}
-/* buttons */
-.edit-profile-buttons {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-}
-.edit-profile-cancel-btn,
-.edit-profile-done-btn {
-	width: 130px;
-	background: #1bb694;
-	font-size: 1rem;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 1px;
-	padding: 10px 20px;
-	border-radius: 5px;
-}
+
 /*<=====================================================>*/
 
 /** admin-old-attandance **/
@@ -220,4 +229,11 @@ td {
 	width: 90px;
 	height: 90px;
 	border-radius: 50%;
+}
+.user-attendance-input-group {
+	display: flex;
+	justify-content: space-between;
+}
+#boys-input {
+	margin-right: 30px;
 }

@@ -42,31 +42,27 @@
           </li>
         </ul>
       </nav>
-      <div class="users">
-        <img src="../images/avatar.png" class="user-attandance-image">
-        <h4>7B</h4>
-        <div class="per">
-          <table>
-            <tr>
-              <td>
-                <span>
-                  <input type="" class="input-total" placeholder=""></input>
-                </span>
-              </td>
-              <td>
-                <span>
-                  <input type="" class="input-total" placeholder=""></input>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td class="gender">Girls</td>
-              <td class="gender">Boys</td>
-            </tr>
-          </table>
+      <div class="content">
+        <div class="input-box">
+          <div class="avatar-container">
+            <img src="../images/avatar.png" class="avatar">
+          </div>
+          <h2 class="hedding">7B</h2>
+          <div class="user-attendance-input-group">
+            <div id="boys-input" class="input-with-label">
+              <input type="number" name="" required>
+              <label>Boys</label>
+            </div>
+            <div class="input-with-label">
+              <input type="number" name="" required>
+              <label>Girls</label>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button id="submit-btn" type="submit" class="btn">Submit</button>
+            <button id="view-btn" type="submit" class="btn">View</button>
+          </div>
         </div>
-        <button id="submit-btn" type="submit" class="view-btn">Submit</button>
-        <button id="view-btn" type="submit" class="view-btn">View</button>
       </div>
     </div>
     <script>
