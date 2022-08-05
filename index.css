@@ -174,61 +174,63 @@ td {
 /*<=====================================================>*/
 
 /** admin-old-attandance **/
-.admin-old-attandance-container {
-	display: flex;
-	color: #1a1a1a;
-	font-family: "Mingzat", sans-serif;
-}
-.admin-old-attandance-heddings {
-	font-size: 2rem;
-	font-weight: bold;
-	color: white;
-	text-align: center;
-}
-.admin-old-attandance-content {
-	width: 100%;
-}
-.admin-old-attandance-tables {
-	display: flex;
-	justify-content: space-evenly;
-}
-/* All Users Table*/
-.admin-old-attandance-table {
-	border-collapse: collapse;
-	margin: 25px 0;
-	font-size: 1.3em;
-	min-width: 300px;
-	border-radius: 5px 5px 0 0;
-	overflow: hidden;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-.admin-old-attandance-table thead tr {
-	background-color: #009879;
-	color: #ffffff;
-	text-align: left;
-	font-weight: bold;
-}
-.admin-old-attandance-table th,
-.admin-old-attandance-tables td {
-	padding: 12px 10px;
-	color: white;
-}
-.admin-old-attandance-table table,
-th,
-td {
-	border: 2px solid rgb(160, 160, 160);
-}
-/*<=====================================================>*/
+@media screen and (min-width: 700px) {
+	.admin-old-attandance-container {
+		display: flex;
+		color: #1a1a1a;
+		font-family: "Mingzat", sans-serif;
+	}
+	.admin-old-attandance-heddings {
+		font-size: 2rem;
+		font-weight: bold;
+		color: white;
+		text-align: center;
+	}
+	.admin-old-attandance-content {
+		width: 100%;
+	}
+	.admin-old-attandance-tables {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	/* All Users Table*/
+	.admin-old-attandance-table {
+		border-collapse: collapse;
+		margin: 25px 0;
+		font-size: 1.3em;
+		min-width: 300px;
+		border-radius: 5px 5px 0 0;
+		overflow: hidden;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	}
+	.admin-old-attandance-table thead tr {
+		background-color: #009879;
+		color: #ffffff;
+		text-align: left;
+		font-weight: bold;
+	}
+	.admin-old-attandance-table th,
+	.admin-old-attandance-tables td {
+		padding: 12px 10px;
+		color: white;
+	}
+	.admin-old-attandance-table table,
+	th,
+	td {
+		border: 2px solid rgb(160, 160, 160);
+	}
+	/*<=====================================================>*/
 
-/* User-Attendance */
-.user-attendance-container {
-	display: flex;
-}
-.user-attandance-image {
-	margin-left: 2vh;
-	width: 90px;
-	height: 90px;
-	border-radius: 50%;
+	/* User-Attendance */
+	.user-attendance-container {
+		display: flex;
+	}
+	.user-attandance-image {
+		margin-left: 2vh;
+		width: 90px;
+		height: 90px;
+		border-radius: 50%;
+	}
 }
 .user-attendance-input-group {
 	display: flex;
