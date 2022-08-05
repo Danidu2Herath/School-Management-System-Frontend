@@ -1,75 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Attendance Input</title>
-    <link rel="stylesheet" href="./index.css">
-    <!-- <link rel="stylesheet" href="./css/User-Attendence.css"> -->
-    <link rel="stylesheet" href="../css/nav-bar.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mingzat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  </head>
-  <body>
-    <div class="user-attendance-container">
-      <nav>
-        <ul>
-          <li>
-            <a class="logo">
-              <img src="../images/avatar.png">
-              <span class="nav-item Admin-name">Username</span>
-            </a>
-          </li>
-          <li>
-            <a href="../Chat App/Admin.html">
-              <i class="fas fa-comment"></i>
-              <span class="nav-item">Message</span>
-            </a>
-          </li>
-          <li>
-            <a href="../Attendance PI Graph/Attendance.html">
-              <i class="fas fa-chart-bar"></i>
-              <span class="nav-item">Attendance</span>
-            </a>
-          </li>
-          <li>
-            <a href="../Login.html" class="logout">
-              <i class="fas fa-sign-out-alt"></i>
-              <span class="nav-item">Log out</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="content">
-        <div class="input-box">
-          <div class="avatar-container">
-            <img src="../images/avatar.png" class="avatar">
-          </div>
-          <h2 class="hedding">7B</h2>
-          <div class="user-attendance-input-group">
-            <div id="boys-input" class="input-with-label">
-              <input type="number" name="" required>
-              <label>Boys</label>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Attendance Input</title>
+        <link rel="stylesheet" href="./index.css">
+        <!-- <link rel="stylesheet" href="./css/User-Attendence.css"> -->
+        <link rel="stylesheet" href="./css/nav-bar.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mingzat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <body>
+        <div class="user-attendance-container">
+            <nav>
+                <ul>
+                    <li>
+                        <a class="logo">
+                            <img src="../images/avatar.png">
+                            <span class="nav-item Admin-name">Username</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Chat App/Admin.html">
+                            <i class="fas fa-comment"></i>
+                            <span class="nav-item">Message</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Attendance PI Graph/Attendance.html">
+                            <i class="fas fa-chart-bar"></i>
+                            <span class="nav-item">Attendance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Login.html" class="logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="nav-item">Log out</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="user-attendence-input-box">
+                    <div class="avatar-container">
+                        <img src="../images/avatar.png" class="user-attendence-avatar">
+                    </div>
+                    <h2 class="user-attendence-hedding">7B</h2>
+                    <div class="user-attendance-input-group">
+                        <div id="boys-input" class="user-attendence-input-with-label">
+                            <input type="number" name="" required>
+                            <label>Boys</label>
+                        </div>
+                        <div class="user-attendence-input-with-label">
+                            <input type="number" name="" required>
+                            <label>Girls</label>
+                        </div>
+                    </div>
+                    <div class="user-attendence-btn-group">
+                        <button id="submit-btn" type="submit" class="user-attendence-btn">
+                            Submit
+                        </button>
+                        <button id="view-btn" type="submit" class="user-attendence-btn">
+                            View
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="input-with-label">
-              <input type="number" name="" required>
-              <label>Girls</label>
-            </div>
-          </div>
-          <div class="btn-group">
-            <button id="submit-btn" type="submit" class="btn">Submit</button>
-            <button id="view-btn" type="submit" class="btn">View</button>
-          </div>
         </div>
-      </div>
-    </div>
-    <script>
-    			document.getElementById("view-btn").addEventListener("click", myFunction);
-    			function myFunction() {
-      		window.location.href="./user-old-attandances .html";
-	 			}
-    </script>
-  </body>
+    </body>
 </html>
