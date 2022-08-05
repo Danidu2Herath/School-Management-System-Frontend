@@ -210,3 +210,14 @@ td {
 	border: 2px solid rgb(160, 160, 160);
 }
 /*<=====================================================>*/
+
+/* User-Attendance */
+.user-attendance-container {
+	display: flex;
+}
+.user-attandance-image {
+	margin-left: 2vh;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+}
