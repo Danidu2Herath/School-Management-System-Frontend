@@ -32,7 +32,8 @@ input::-webkit-outer-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-/* avatar */
+/*<=====================================================>*/
+/** avatar **/
 .avatar-container {
   width: 100%;
   display: flex;
@@ -47,6 +48,8 @@ input[type="number"] {
   background-color: white;
   overflow: hidden;
 }
+/*<=====================================================>*/
+
 /** Global **/
 .content {
   width: 100%;
@@ -117,7 +120,6 @@ input[type="number"] {
 /*<=====================================================>*/
 
 /** All-Users **/
-
 .all-users-container {
   display: flex;
   color: #1a1a1a;
@@ -234,15 +236,12 @@ select[multiple] option {
   white-space: normal;
   outline-color: var(--select-focus);
 }
-
 /*<=====================================================>*/
 
 /** Edit Profile **/
 .edit-profile-container {
   display: flex;
 }
-/* avatar */
-
 /*<=====================================================>*/
 
 /** admin-old-attandance **/
@@ -291,6 +290,7 @@ td {
   border: 2px solid rgb(160, 160, 160);
 }
 /*<=====================================================>*/
+
 /** User-Attendance **/
 .user-attendance-container {
   display: flex;
@@ -396,4 +396,233 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+}
+/*<=====================================================>*/
+
+/** user-old-attandance **/
+.user-old-attandance-container {
+  display: flex;
+  color: #1a1a1a;
+  font-family: "Mingzat", sans-serif;
+}
+.user-old-attandance-heddings {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.user-old-attandance-content {
+  width: 100%;
+}
+.user-old-attandance-tables {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* All Users Table*/
+.user-old-attandance-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.3em;
+  min-width: 300px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.user-old-attandance-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+.user-old-attandance-table th,
+.user-old-attandance-tables td {
+  padding: 12px 10px;
+  color: white;
+}
+.user-old-attandance-table table,
+th,
+td {
+  border: 2px solid rgb(160, 160, 160);
+}
+.user-old-attandance-heddings-1 {
+  color: #009879;
+  font-size: 2.8rem;
+}
+.user-old-attandance-heddings-2 {
+  color: #009879;
+  font-size: 2.3rem;
+}
+.user-old-attandance-heddings-3 {
+  /* color: #009879; */
+  font-size: 2rem;
+}
+/*<=====================================================>*/
+
+/**User-Chat-App **/
+#container {
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a;
+  margin: 0;
+  font-size: 0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.user-chatbox_img {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  width: 55px;
+  height: 55px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.user-chatbox_name {
+  margin-top: 20;
+  text-align: center;
+  font-size: 1.5em;
+}
+main {
+  width: 208vh;
+  height: 100%;
+  display: inline-block;
+  font-size: 15px;
+  vertical-align: top;
+}
+.user-chat-panel {
+  position: fixed;
+  margin-top: -0.2vh;
+  width: 214vh;
+  block-size: fit-content;
+  border: 0.2vh solid white;
+  margin-left: -2.4vh;
+}
+main .user-chatbox-header {
+  height: 15.5vh;
+  padding: 30px 20px 30px 40px;
+  margin-top: -100vh;
+  margin-left: 14vh;
+  border: 0.5px solid white;
+}
+main .user-chatbox-header > * {
+  display: inline-block;
+  vertical-align: top;
+}
+main .user-chatbox-header img:first-child {
+  border-radius: 50%;
+}
+main .user-chatbox-header img:last-child {
+  width: 24px;
+  margin-top: 8px;
+}
+main .user-chatbox-header div {
+  margin-left: 10px;
+  margin-right: 145px;
+}
+main .user-chatbox-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1vh;
+  color: #fff;
+}
+main .user-chatbox-header h3 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #7e818a;
+}
+.user-chatbox_img {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  width: 55px;
+  height: 55px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.8);
+}
+#user-chat {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow-y: scroll;
+  border: 0.5px solid white;
+  border-top: hidden;
+  margin-left: 14vh;
+  height: 67.2vh;
+  width: 194vh;
+  background-color: #1d1d1d;
+}
+.user-chatbox-send_status {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: normal;
+  color: #6fbced;
+}
+#user-chat li {
+  padding: 10px 30px;
+}
+#user-chat h2,
+#user-chat h3 {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: normal;
+}
+#user-chat h3 {
+  color: #bbb;
+}
+
+#user-chat .entete {
+  margin-bottom: 5px;
+}
+#user-chat .message {
+  padding: 20px;
+  color: #fff;
+  line-height: 25px;
+  max-width: 100%;
+  display: inline-block;
+  text-align: left;
+  border-radius: 50px;
+}
+#user-chat .me {
+  text-align: right;
+}
+#user-chat .you .message {
+  background-color: #58b666;
+}
+#user-chat .me .message {
+  background-color: #6fbced;
+}
+.user-chatname {
+  margin-top: 15px;
+  color: #fff;
+}
+main footer {
+  height: 17.3vh;
+  width: 194vh;
+  padding: 20px 20px 20px 20px;
+  margin-left: 14vh;
+  border: 0.5px solid white;
+  border-top: hidden;
+  flex: right;
+  position: fixed;
+}
+main footer input {
+  resize: none;
+  border: none;
+  width: 88%;
+  height: 65%;
+  position: relative;
+  border-radius: 9vh;
+  padding: 3vh;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 1.5vh;
+  float: left;
+  background-color: #5e616a;
+}
+main footer input::placeholder {
+  color: black;
+  font-family: "Mingzat", sans-serif;
+}
+main footer img {
+  margin-left: 0.4vh;
+  margin-top: 1.6vh;
+  height: 30px;
+  cursor: pointer;
 }
