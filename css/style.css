@@ -232,17 +232,14 @@ h1 {
 aside {
   margin-top: -100vh;
   max-width: 46%;
-  height: 97.5vh;
-  background-color: #3b3e49;
+  height: 99.8vh;
+  background-color: #2e3035;
   display: inline-block;
   font-size: 15px;
   vertical-align: top;
   margin-left: 4vh;
   margin-bottom: 13.5vh;
   overflow: hidden;
-  border-top: 0.2vh solid white;
-  border-right: 0.2vh solid white;
-  border-bottom: 0.2vh solid white;
   position: relative;
 }
 
@@ -412,15 +409,19 @@ aside li h3 {
   margin-left: 53.3vh;
   margin-top: -111vh;
 }
-
+.admin-chatbox-search {
+  background: #2c2d30;
+}
 main header {
-  height: 15.4vh;
+  height: 15vh;
   width: 145vh;
   padding: 2.4% 41% 0% 4.3%;
-  margin-left: 2vh;
+  margin-left: 5.3vh;
   position: relative;
-  border: 0.5px solid white;
+  /* border: 0.5px solid white; */
   border-left: transparent;
+  background: #2c2d30;
+  margin-top: -2.3vh;
 }
 
 main header > * {
@@ -457,14 +458,12 @@ main header h3 {
 #chat {
   list-style-type: none;
   overflow-y: scroll;
-  margin-left: 1vh;
-  /* margin-top: hidden; */
+  margin-left: 5vh;
   width: 147vh;
   height: 67.5vh;
-  /* border-bottom: 0.5px solid white; */
-  border-right: 0.5px solid white;
   overflow: none;
   position: relative;
+  background: #242527;
 }
 
 #chat li {
@@ -517,13 +516,9 @@ main footer {
   height: 14.6vh;
   width: 145.5vh;
   padding: 20px 20px 20px 20px;
-  margin-left: 2vh;
-  /* margin-top: -9vh; */
-  border: 0.5px solid white;
-  /* border-left: transparent;
-  border-top: transparent; */
-  /* margin-left: 0vh; */
+  margin-left: 5vh;
   position: relative;
+  background: #2c2d30;
 }
 
 main footer input {
