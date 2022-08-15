@@ -29,8 +29,8 @@ body {
   width: 100%;
   height: 99.5vh;
   background: #242527;
-  border-radius: 20px;
   border: 1px solid white;
+  background: #1a1a1a;
 }
 
 #search-cont,
@@ -43,17 +43,15 @@ body {
   align-items: center;
   grid-area: search-cont;
   padding: 0 20px;
-  border-radius: 10px 0 0 0;
   box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
   z-index: 1;
-  border-top-left-radius: 30px;
+  background-color: #2d2e31;
 }
 
 #search-cont input {
   color: #eee;
   outline: none;
   font-weight: bold;
-  border-radius: 20px;
   height: 30px;
   width: 235px; /*here*/
   border: 0;
@@ -89,7 +87,6 @@ body {
 .conversation.active,
 .conversation:hover {
   background: #5e616a;
-  border-radius: 20px;
 }
 
 .conversation:hover {
@@ -129,9 +126,11 @@ body {
   text-overflow: ellipsis;
 }
 
+#new-msg-cont,
 #chat-name,
 #chat-area {
   background: #242527;
+  background-color: #2d2e31;
 }
 
 #chat-name {
@@ -143,7 +142,6 @@ body {
   color: white;
   font-weight: bold;
   font-size: 2rem;
-  border-top-right-radius: 30px;
   box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
   padding: 0 20px;
 }
@@ -208,11 +206,11 @@ body {
   align-items: center;
   grid-gap: 15px;
   grid-area: chat-area;
-  border-bottom-right-radius: 30px;
   border-top: 1px solid rgba(0, 0, 0, 0.25);
   padding-left: 42px;
   padding-right: 22px;
   box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
+  background-color: #2d2e31;
 }
 
 #chat-area input {
