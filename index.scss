@@ -1,7 +1,18 @@
+$primary-bgcolor: #1a1a1a;
+$bg-color-1: #4ad489;
+$bgcolor-2: #009879;
+$color-1: white;
+$font-family: "Mingzat", sans-serif;
+$bg-size: cover;
+$font-size-1: 2rem;
+$position-1: relative;
+$position-2: absolute;
+$position-3: fixed;
+
 body {
-  background-color: #1a1a1a;
-  font-family: "Mingzat", sans-serif;
-  background-size: cover;
+  background-color: $primary-bgcolor;
+  font-family: $font-family;
+  background-size: $bg-size;
 }
 
 /**Scroll Bar **/
@@ -9,35 +20,29 @@ body {
 ::-webkit-scrollbar {
   width: 13px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   background: transparent;
   margin: 10px;
   margin-bottom: 10px;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 10px;
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
 /* hide spiners in number inputs */
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
-
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
-
 /*<=====================================================>*/
 /** avatar **/
 .avatar-container {
@@ -45,18 +50,17 @@ input[type=number] {
   display: flex;
   justify-content: center;
 }
-
 .avatar {
   box-sizing: border-box;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   padding: 3px;
-  background-color: white;
+  background-color: $color-1;
   overflow: hidden;
 }
-
 /*<=====================================================>*/
+
 /** Global **/
 .content {
   width: 100%;
@@ -64,7 +68,6 @@ input[type=number] {
   align-items: center;
   justify-content: center;
 }
-
 .btn {
   width: 130px;
   background: #1bb694;
@@ -75,19 +78,16 @@ input[type=number] {
   padding: 10px 20px;
   border-radius: 5px;
 }
-
 .btn-group {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-
 .hedding {
   margin-bottom: 30px;
   text-align: center;
   color: #ff2f2f;
 }
-
 .input-box {
   width: 400px;
   padding: 40px;
@@ -96,41 +96,36 @@ input[type=number] {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
-
 .container {
   display: flex;
-  color: #1a1a1a;
-  font-family: "Mingzat", sans-serif;
+  color: $primary-bgcolor;
+  font-family: $font-family;
 }
-
 /* fancy effect when clicking on input button */
 .input-box .input-with-label {
-  position: relative;
+  position: $position-1;
 }
-
 .input-box .input-with-label input {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: white;
+  color: $color-1;
   margin-bottom: 30px;
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid $color-1;
   outline: none;
   background: transparent;
 }
-
 .input-box .input-with-label label {
-  position: absolute;
+  position: $position-2;
   top: 0;
   left: 0;
   padding: 10px 0;
   font-size: 16px;
-  color: white;
+  color: $color-1;
   pointer-events: none;
   transition: 0.5s;
 }
-
 .input-box .input-with-label input:focus ~ label,
 .input-box .input-with-label input:valid ~ label {
   top: -20px;
@@ -138,31 +133,27 @@ input[type=number] {
   color: #2ea101;
   font-size: 12px;
 }
-
 /*<=====================================================>*/
+
 /** All-Users **/
 .all-users-container {
   display: flex;
-  color: #1a1a1a;
-  font-family: "Mingzat", sans-serif;
+  color: $primary-bgcolor;
+  font-family: $font-family;
 }
-
 .heddings {
-  font-size: 2rem;
+  font-size: $font-size-1;
   font-weight: bold;
-  color: white;
+  color: $color-1;
   text-align: center;
 }
-
 .all-users-content {
   width: 100%;
 }
-
 .all-users-tables {
   display: flex;
   justify-content: space-evenly;
 }
-
 /* All Users Table*/
 .all-users-table {
   border-collapse: collapse;
@@ -173,32 +164,28 @@ input[type=number] {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-
 .all-users-table thead tr {
-  background-color: #009879;
-  color: white;
+  background-color: $bgcolor-2;
+  color: $color-1;
   text-align: left;
   font-weight: bold;
 }
-
 .all-users-table th,
 .all-users-tables td {
   padding: 12px 10px;
-  color: white;
+  color: $color-1;
 }
-
 .all-users-table table,
 th,
 td {
   border: 2px solid rgb(160, 160, 160);
 }
-
 /*Dropdown to select role*/
 .all-users-select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: #1a1a1a;
+  background-color: $primary-bgcolor;
   border: none;
   padding: 0 1em 0 0;
   margin: 0;
@@ -207,11 +194,10 @@ td {
   line-height: inherit;
   z-index: 1;
 }
-
 #all-users-standard-select {
   grid-template-areas: "select";
   align-items: center;
-  position: relative;
+  position: $position-1;
   width: 10ch;
   border: 1px solid var(--select-border);
   padding: 0.25em 0.5em;
@@ -221,16 +207,13 @@ td {
   border-radius: 0.4em;
   background-color: #575555;
 }
-
 .all-users-select::-ms-expand {
   display: none;
 }
-
 .all-users-select select,
 .all-users-select::after {
   grid-area: select;
 }
-
 .all-users-select:not(.all-users-select--multiple)::after {
   content: "";
   justify-self: end;
@@ -240,9 +223,8 @@ td {
   -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
   clip-path: polygon(100% 0%, 0 0%, 50% 100%);
 }
-
 select:focus + .all-users-focus {
-  position: absolute;
+  position: $position-2;
   top: -1px;
   left: -1px;
   right: -1px;
@@ -250,7 +232,6 @@ select:focus + .all-users-focus {
   border: 2px solid var(--select-focus);
   border-radius: inherit;
 }
-
 select[multiple] {
   padding-right: 0;
   /*
@@ -267,35 +248,32 @@ select[multiple] {
    * Not supported crossbrowser
    */
 }
-
 select[multiple] option {
+  $color-1-space: normal;
   outline-color: var(--select-focus);
 }
-
 /*<=====================================================>*/
+
 /** Edit Profile **/
 .edit-profile-container {
   display: flex;
 }
-
 /*<=====================================================>*/
+
 /** admin-old-attandance **/
 .admin-old-attandance-heddings {
-  font-size: 2rem;
+  font-size: $font-size-1;
   font-weight: bold;
-  color: white;
+  color: $color-1;
   text-align: center;
 }
-
 .admin-old-attandance-content {
   width: 100%;
 }
-
 .admin-old-attandance-tables {
   display: flex;
   justify-content: space-evenly;
 }
-
 /* All Users Table*/
 .admin-old-attandance-table {
   border-collapse: collapse;
@@ -306,41 +284,35 @@ select[multiple] option {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-
 .admin-old-attandance-table thead tr {
-  background-color: #009879;
-  color: white;
+  background-color: $bgcolor-2;
+  color: $color-1;
   text-align: left;
   font-weight: bold;
 }
-
 .admin-old-attandance-table th,
 .admin-old-attandance-tables td {
   padding: 12px 10px;
-  color: white;
+  color: $color-1;
 }
-
 .admin-old-attandance-table table,
 th,
 td {
   border: 2px solid rgb(160, 160, 160);
 }
-
 /*<=====================================================>*/
+
 /** User-Attendance **/
 .user-attendance-container {
   display: flex;
 }
-
 .user-attendance-input-group {
   display: flex;
   justify-content: space-between;
 }
-
 #boys-input {
   margin-right: 30px;
 }
-
 .user-attendence-avatar {
   box-sizing: border-box;
   width: 100px;
@@ -350,38 +322,33 @@ td {
   background-color: transparent;
   overflow: hidden;
 }
-
 .user-attendence-hedding {
   margin-bottom: 30px;
   text-align: center;
-  color: white;
+  color: $color-1;
 }
-
 .user-attendence-btn {
   width: 130px;
   background: transparent;
-  outline: 2px solid #4ad489;
+  outline: 2px solid $bg-color-1;
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;
   padding: 10px 20px;
   border-radius: 5px;
-  color: #4ad489;
+  color: $bg-color-1;
 }
-
 .user-attendence-btn-group {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-
 .user-attendence-btn:hover {
-  background: #4ad489;
-  color: white;
+  background: $bg-color-1;
+  color: $color-1;
   transition: 0.5s;
 }
-
 .user-attendence-input-box {
   width: 400px;
   padding: 40px;
@@ -389,39 +356,41 @@ td {
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  outline: 2px solid white;
+  outline: 2px solid $color-1;
 }
-
 /* fancy effect when clicking on input button */
 .user-attendence-input-box .user-attendence-input-with-label {
-  position: relative;
+  position: $position-1;
 }
-
 .user-attendence-input-box .user-attendence-input-with-label input {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: white;
+  color: $color-1;
   margin-bottom: 30px;
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid $color-1;
   outline: none;
   background: transparent;
 }
-
 .user-attendence-input-box .user-attendence-input-with-label label {
-  position: absolute;
+  position: $position-2;
   top: 0;
   left: 0;
   padding: 10px 0;
   font-size: 16px;
-  color: white;
+  color: $color-1;
   pointer-events: none;
   transition: 0.5s;
 }
-
-.user-attendence-input-box .user-attendence-input-with-label input:focus ~ label,
-.user-attendence-input-box .user-attendence-input-with-label input:valid ~ label {
+.user-attendence-input-box
+  .user-attendence-input-with-label
+  input:focus
+  ~ label,
+.user-attendence-input-box
+  .user-attendence-input-with-label
+  input:valid
+  ~ label {
   top: -20px;
   left: 0;
   color: #2ea101;
@@ -432,31 +401,27 @@ td {
 #user-old-attendance-container {
   color: black;
 }
-
 /*<=====================================================>*/
+
 /** user-old-attandance **/
 .user-old-attandance-container {
   display: flex;
-  color: #1a1a1a;
-  font-family: "Mingzat", sans-serif;
+  color: $primary-bgcolor;
+  font-family: $font-family;
 }
-
 .user-old-attandance-heddings {
-  font-size: 2rem;
+  font-size: $font-size-1;
   font-weight: bold;
-  color: white;
+  color: $color-1;
   text-align: center;
 }
-
 .user-old-attandance-content {
   width: 100%;
 }
-
 .user-old-attandance-tables {
   display: flex;
   justify-content: space-evenly;
 }
-
 /* All Users Table*/
 .user-old-attandance-table {
   border-collapse: collapse;
@@ -467,53 +432,46 @@ td {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-
 .user-old-attandance-table thead tr {
-  background-color: #009879;
-  color: white;
+  background-color: $bgcolor-2;
+  color: $color-1;
   text-align: left;
   font-weight: bold;
 }
-
 .user-old-attandance-table th,
 .user-old-attandance-tables td {
   padding: 12px 10px;
-  color: white;
+  color: $color-1;
 }
-
 .user-old-attandance-table table,
 th,
 td {
   border: 2px solid rgb(160, 160, 160);
 }
-
 .user-old-attandance-heddings-1 {
-  color: #009879;
+  color: $bgcolor-2;
   font-size: 2.8rem;
 }
-
 .user-old-attandance-heddings-2 {
-  color: #009879;
+  color: $bgcolor-2;
   font-size: 2.3rem;
 }
-
 .user-old-attandance-heddings-3 {
   /* color: $bgcolor-2; */
-  font-size: 2rem;
+  font-size: $font-size-1;
 }
-
 /*<=====================================================>*/
+
 /**User-Chat-App **/
 #container {
   width: 100%;
   height: 100%;
-  background: #1a1a1a;
+  background: $primary-bgcolor;
   margin: 0;
   font-size: 0;
   border-radius: 15px;
   overflow: hidden;
 }
-
 .user-chatbox_img {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -522,13 +480,11 @@ td {
   border-radius: 40px;
   background: rgba(255, 255, 255, 0.8);
 }
-
 .user-chatbox_name {
   margin-top: 20;
   text-align: center;
   font-size: 1.5em;
 }
-
 main {
   width: 208vh;
   height: 100%;
@@ -536,55 +492,46 @@ main {
   font-size: 15px;
   vertical-align: top;
 }
-
 .user-chat-panel {
-  position: fixed;
+  position: $position-3;
   margin-top: -0.2vh;
   width: 214vh;
   block-size: fit-content;
-  border: 0.2vh solid white;
+  border: 0.2vh solid $color-1;
   margin-left: -2.4vh;
 }
-
 main .user-chatbox-header {
   height: 15.5vh;
   padding: 30px 20px 30px 40px;
   margin-top: -100vh;
   margin-left: 14vh;
-  border: 0.5px solid white;
+  border: 0.5px solid $color-1;
 }
-
 main .user-chatbox-header > * {
   display: inline-block;
   vertical-align: top;
 }
-
 main .user-chatbox-header img:first-child {
   border-radius: 50%;
 }
-
 main .user-chatbox-header img:last-child {
   width: 24px;
   margin-top: 8px;
 }
-
 main .user-chatbox-header div {
   margin-left: 10px;
   margin-right: 145px;
 }
-
 main .user-chatbox-header h2 {
   font-size: 1.5rem;
   margin-bottom: 1vh;
-  color: white;
+  color: $color-1;
 }
-
 main .user-chatbox-header h3 {
   font-size: 14px;
   font-weight: normal;
   color: #7e818a;
 }
-
 .user-chatbox_img {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -593,38 +540,33 @@ main .user-chatbox-header h3 {
   border-radius: 40px;
   background: rgba(255, 255, 255, 0.8);
 }
-
 #user-chat {
   padding-left: 0;
   margin: 0;
   list-style-type: none;
   overflow-y: scroll;
-  border: 0.5px solid white;
+  border: 0.5px solid $color-1;
   border-top: hidden;
   margin-left: 14vh;
   height: 67.2vh;
   width: 194vh;
   background-color: #1d1d1d;
 }
-
 .user-chatbox-send_status {
   display: inline-block;
   font-size: 13px;
   font-weight: normal;
   color: #6fbced;
 }
-
 #user-chat li {
   padding: 10px 30px;
 }
-
 #user-chat h2,
 #user-chat h3 {
   display: inline-block;
   font-size: 13px;
   font-weight: normal;
 }
-
 #user-chat h3 {
   color: #bbb;
 }
@@ -632,70 +574,59 @@ main .user-chatbox-header h3 {
 #user-chat .entete {
   margin-bottom: 5px;
 }
-
 #user-chat .message {
   padding: 20px;
-  color: white;
+  color: $color-1;
   line-height: 25px;
   max-width: 100%;
   display: inline-block;
   text-align: left;
   border-radius: 50px;
 }
-
 #user-chat .me {
   text-align: right;
 }
-
 #user-chat .you .message {
   background-color: #58b666;
 }
-
 #user-chat .me .message {
   background-color: #6fbced;
 }
-
 .user-chatname {
   margin-top: 15px;
-  color: white;
+  color: $color-1;
 }
-
 main footer {
   height: 17.3vh;
   width: 194vh;
   padding: 20px 20px 20px 20px;
   margin-left: 14vh;
-  border: 0.5px solid white;
+  border: 0.5px solid $color-1;
   border-top: hidden;
   flex: right;
-  position: fixed;
+  position: $position-3;
 }
-
 main footer input {
   resize: none;
   border: none;
   width: 88%;
   height: 65%;
-  position: relative;
+  position: $position-1;
   border-radius: 9vh;
   padding: 3vh;
   font-size: 1rem;
-  color: white;
+  color: $color-1;
   margin-top: 1.5vh;
   float: left;
   background-color: #5e616a;
 }
-
 main footer input::placeholder {
   color: black;
-  font-family: "Mingzat", sans-serif;
+  font-family: $font-family;
 }
-
 main footer img {
   margin-left: 0.4vh;
   margin-top: 1.6vh;
   height: 30px;
   cursor: pointer;
 }
-
-/*# sourceMappingURL=index.css.map */
