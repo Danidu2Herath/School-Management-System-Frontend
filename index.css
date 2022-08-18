@@ -541,6 +541,8 @@ main {
   position: fixed;
   margin-top: -0.2vh;
   width: 214vh;
+  block-size: -webkit-fit-content;
+  block-size: -moz-fit-content;
   block-size: fit-content;
   border: 0.2vh solid white;
   margin-left: -2.4vh;
@@ -686,6 +688,16 @@ main footer input {
   background-color: #5e616a;
 }
 
+main footer input::-moz-placeholder {
+  color: black;
+  font-family: "Mingzat", sans-serif;
+}
+
+main footer input:-ms-input-placeholder {
+  color: black;
+  font-family: "Mingzat", sans-serif;
+}
+
 main footer input::placeholder {
   color: black;
   font-family: "Mingzat", sans-serif;
@@ -696,6 +708,4 @@ main footer img {
   margin-top: 1.6vh;
   height: 30px;
   cursor: pointer;
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

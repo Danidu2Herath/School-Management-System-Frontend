@@ -1,0 +1,113 @@
+/* Navbar*/
+a,
+a:focus,
+a:hover,
+a:visited,
+a:link,
+a:active,
+ul {
+	all: unset;
+}
+/* TODO: add hover effect to navbar */
+nav {
+	position: sticky;
+	margin-top: 0vh;
+	bottom: 0;
+	height: 100vh;
+	left: 0;
+	/** NOTE: when hover effect is added width should be 85px **/
+	width: 200px;
+	background: #3b3e49;
+	overflow: hidden;
+	border-right: 0.5px solid white;
+	z-index: 1;
+}
+/* nav:hover {
+	width: 280px;
+	transition: 10ms;
+}
+.nav-item-text {
+	display: none;
+}
+nav:hover .nav-item-text {
+	opacity: 1;
+	display: inline-block;
+	top: 12px;
+	margin-left: 10px;
+	color: #fff;
+	/* transition: 0.1s;
+} */
+.navbar-hedding-container {
+	text-align: center;
+	display: flex;
+	margin: 10px;
+	padding: 10px;
+}
+.navbar-avatar {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+}
+.username {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-left: 20px;
+	margin-top: 18px;
+	font-size: 1rem;
+	text-align: center;
+	color: #fff;
+}
+a {
+	width: 280px;
+	font-size: 14px;
+	color: rgb(85, 83, 83);
+	display: table;
+	padding: 10px;
+}
+.navbar-icon {
+	width: 70px;
+	height: 40px;
+	top: 20px;
+	font-size: 160%;
+	color: #fff;
+	text-align: center;
+}
+.nav-item {
+	/* top: 20px; */
+	color: #fff;
+	padding: 10px;
+	border-radius: 7px;
+}
+.nav-item:hover {
+	background: grey;
+}
+.nav-item:hover i {
+	color: #34af6d;
+	transition: 0.5s;
+}
+.logout button {
+	all: unset;
+	cursor: text;
+}
+.logout-button {
+	background: transparent;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	border: none;
+	width: 100%;
+}
+.logout-button:focus {
+	outline: 0 !important;
+}
+.navbar-content {
+	position: sticky;
+}
+.nav-elements {
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - 85px);
+}
+.logout {
+	margin-top: auto;
+}
