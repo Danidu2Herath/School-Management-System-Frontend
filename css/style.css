@@ -559,7 +559,7 @@ main footer img {
   margin-top: 4vh;
 }
 
-/*/*Attendce With Dashboard*/
+/** Admin-Attendce*/
 
 /* main-1 Section */
 
@@ -586,7 +586,21 @@ main footer img {
   display: flex;
   width: 100%;
 }
-
+.paddle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3em;
+}
+.left-paddle {
+  left: 0;
+}
+.right-paddle {
+  right: 0;
+}
+/* .hidden {
+  display: none;
+} */
 /* main-2 Section */
 
 .main-2-1 {
