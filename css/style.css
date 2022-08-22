@@ -561,6 +561,108 @@ main footer img {
 
 /** Admin-Attendce*/
 
+/* .right-arrow-section-1 {
+  font-size: 60px;
+  position: relative;
+  top: 225px;
+  right: -1050px;
+  color: rgb(134, 134, 134);
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.left-arrow-section-1 {
+  font-size: 60px;
+  position: relative;
+  top: 225px;
+  right: 10px;
+  color: rgb(134, 134, 134);
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.left-arrow-section-2 {
+  font-size: 60px;
+  position: relative;
+  top: 325px;
+  right: 10px;
+  color: rgb(134, 134, 134);
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.right-arrow-section-2 {
+  font-size: 60px;
+  position: relative;
+  top: 625px;
+  right: -1050px;
+  color: rgb(134, 134, 134);
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.left-arrow-section-3 {
+  font-size: 60px;
+  position: relative;
+  top: 100px;
+  right: 10px;
+  color: rgb(134, 134, 134);
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.right-arrow-section-3 {
+  font-size: 60px;
+  position: relative;
+  top: -1050px;
+  right: 0px;
+  color: rgb(134, 134, 134);
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.9;
+} */
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 4vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.3;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1.9;
+  color: white;
+}
+.pre-btn-1 {
+  margin-top: -5px;
+  margin-left: 170px;
+}
+.nxt-btn- {
+  margin-top: -40px;
+}
 /* main-1 Section */
 
 .main-1 {
@@ -586,21 +688,7 @@ main footer img {
   display: flex;
   width: 100%;
 }
-.paddle {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 3em;
-}
-.left-paddle {
-  left: 0;
-}
-.right-paddle {
-  right: 0;
-}
-/* .hidden {
-  display: none;
-} */
+
 /* main-2 Section */
 
 .main-2-1 {
