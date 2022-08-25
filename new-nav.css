@@ -1,0 +1,637 @@
+body {
+  background-color: #1a1a1a;
+}
+
+/*login form*/
+.loginWrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../public/images/img1.png") no-repeat center;
+  background-size: cover;
+  font-family: "Mingzat", sans-serif;
+}
+
+/*Form Styling*/
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  padding: 80px 40px 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+.form img {
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+  width: 100px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+.form h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  color: #ff2f2f;
+}
+.form .inputGroup {
+  position: relative;
+}
+.form .inputGroup input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+}
+.form .inputGroup label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.3s ease-out;
+}
+.form .inputGroup input:focus + label,
+.form .inputGroup input:valid + label {
+  transform: translateY(-18px);
+  color: #2ea101;
+  font-size: 0.8rem;
+}
+.submitBtn {
+  display: block;
+  margin-left: auto;
+  border: none;
+  outline: none;
+  background: #1bb694;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+.registerLink {
+  color: inherit;
+}
+
+/*Register form*/
+.register {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../public/images/img1.png") no-repeat center;
+  background-size: cover;
+  font-family: "Mingzat", sans-serif;
+}
+.close {
+  position: absolute;
+  right: 1.5rem;
+  top: 0.5rem;
+  font-size: 2rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar*/
+a,
+a:focus,
+a:hover,
+a:visited,
+a:link,
+a:active,
+ul {
+  all: unset;
+}
+/* TODO: add hover effect to navbar */
+nav {
+  position: sticky;
+  margin-top: 0vh;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  /** NOTE: when hover effect is added width should be 85px **/
+  width: 200px;
+  background: #3b3e49;
+  overflow: hidden;
+  border-right: 0.5px solid white;
+  z-index: 1;
+}
+/* nav:hover {
+	width: 280px;
+	transition: 10ms;
+}
+.nav-item-text {
+	display: none;
+}
+nav:hover .nav-item-text {
+	opacity: 1;
+	display: inline-block;
+	top: 12px;
+	margin-left: 10px;
+	color: #fff;
+	/* transition: 0.1s;
+} */
+.navbar-hedding-container {
+  text-align: center;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+.navbar-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.username {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-top: 18px;
+  font-size: 1rem;
+  /* font-size-adjust: 0.4; */
+  text-align: center;
+  color: #fff;
+}
+a {
+  width: 280px;
+  font-size: 14px;
+  color: rgb(85, 83, 83);
+  display: table;
+  padding: 10px;
+}
+.navbar-icon {
+  width: 70px;
+  height: 40px;
+  top: 20px;
+  font-size: 160%;
+  color: #fff;
+  text-align: center;
+}
+.nav-item {
+  /* top: 20px; */
+  color: #fff;
+  padding: 10px;
+  border-radius: 7px;
+}
+.nav-item:hover {
+  background: grey;
+}
+.nav-item:hover i {
+  color: #34af6d;
+  transition: 0.5s;
+}
+.logout button {
+  all: unset;
+  cursor: text;
+}
+.logout-button {
+  background: transparent;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  border: none;
+  width: 100%;
+}
+.logout-button:focus {
+  outline: 0 !important;
+}
+.navbar-content {
+  position: sticky;
+}
+.nav-elements {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 85px);
+}
+.logout {
+  margin-top: auto;
+}
+/* chat */
+#chat-cont {
+  display: grid;
+  grid: "search-cont chat-name" 71px "conversation-list msg-list" 1fr "new-msg-cont chat-area" 78px/270px 1fr;
+  min-width: 1080px;
+  max-width: 1300px;
+  max-height: 1200px;
+  width: 250vw;
+  height: 99.9vh;
+  background: cover;
+  border: 1px solid white;
+  background: #1a1a1a;
+  /* font-size: 10px; */
+}
+#search-cont,
+#conversation-list {
+  background: #242527;
+}
+
+#search-cont {
+  display: grid;
+  align-items: center;
+  grid-area: search-cont;
+  padding: 0 20px;
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
+  z-index: 1;
+  background-color: #2d2e31;
+}
+
+#search-cont input {
+  color: #eee;
+  outline: none;
+  font-weight: bold;
+  height: 30px;
+  width: 250px; /*here*/
+  border: 0;
+  padding-left: 48px;
+  padding-right: 20px;
+  font-size: 0.8rem;
+  background: url("../public/icons/search_white_24dp.svg") no-repeat
+    rgba(255, 255, 255, 0.3);
+  background-position: 15px center;
+  background-size: 20px 20px;
+}
+
+#search-cont input::placeholder {
+  color: #ddd;
+  font-weight: bold;
+}
+
+#conversation-list {
+  grid-area: conversation-list;
+  overflow-y: scroll;
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+.conversation {
+  display: grid;
+  grid-template-columns: 40px 1fr max-content;
+  color: #ddd;
+  font-size: 1rem;
+  background: #242527;
+  padding: 20px 20px 20px 15px;
+  align-items: center;
+}
+
+.conversation.active,
+.conversation:hover {
+  background: #5e616a;
+}
+
+.conversation:hover {
+  cursor: pointer;
+}
+
+.conversation > img {
+  grid-row: span 2;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.title-text {
+  font-weight: bold;
+  color: #eee;
+  padding-left: 5px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.conv-msg {
+  grid-column: span 2;
+  padding-left: 5px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.8rem;
+}
+.last-date {
+  color: #ddd;
+  white-space: nowrap;
+  font-size: 0.5rem;
+}
+
+#new-msg-cont,
+#chat-name,
+#chat-area-msg {
+  background: #242527;
+  background-color: #2d2e31;
+}
+
+#chat-name {
+  display: grid;
+  grid: 36px/1fr 36px;
+  align-content: center;
+  align-items: center;
+  grid-area: chat-name;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
+  padding: 0 20px;
+}
+
+#chat-name > imgchat-areasend-msg > img {
+  cursor: pointer;
+}
+
+#msg-list {
+  grid-area: msg-list;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 20px;
+  overflow-y: scroll;
+}
+
+.msg-row {
+  margin-bottom: 20px;
+}
+
+.msg-row img {
+  border-radius: 100%;
+  height: 40px;
+  width: 35px;
+}
+
+.msg-time {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.msg-text {
+  padding: 9px 14px;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  width: fit-content;
+}
+.your-msg {
+  align-self: flex-end;
+}
+.your-msg .msg-text {
+  background: #6fbced;
+  color: #eee;
+  border: 1px solid #6fbced;
+  border-radius: 18px 18px 0px 18px;
+}
+.their-msg .msg-text {
+  background: #58b666;
+  color: #111;
+  border: 1px solid #58b666;
+  border-radius: 18px 18px 18px 0;
+}
+#chat-area {
+  display: grid;
+  grid: 51px/32px 1fr;
+  align-content: center;
+  align-items: center;
+  grid-gap: 15px;
+  grid-area: chat-area;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  padding-left: 25px;
+  padding-right: 22px;
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
+  background-color: #2d2e31;
+  display: flex;
+}
+
+#chat-area input {
+  outline: none;
+  padding: 8px;
+  border: none;
+  color: white;
+  border-radius: 18px;
+  font-size: 1.1rem;
+  background-color: #5e616a;
+  width: 100%;
+}
+.chat-send-icon {
+  width: 30px;
+  height: 30px;
+}
+.chat-insert-icon {
+  height: 30px;
+  margin-left: 8px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.status-tag {
+  font-size: 12px;
+  color: #7e818a;
+  font-weight: normal;
+}
+.away {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 7px;
+  background-color: grey;
+}
+.online {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 7px;
+  background-color: #58b666;
+}
+.offline {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 7px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: white;
+}
+.chatbox_img {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  width: 55px;
+  height: 55px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/*Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* hide spiners in number inputs */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* avatar */
+.avatar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: white;
+  overflow: hidden;
+}
+
+/** Global **/
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 130px;
+  background: #1bb694;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hedding {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ff2f2f;
+}
+
+.input-box {
+  width: 400px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  color: #1a1a1a;
+  font-family: "Mingzat", sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* fancy effect when clicking on input button */
+.input-box .input-with-label {
+  position: relative;
+}
+
+.input-box .input-with-label input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: transparent;
+}
+
+.input-box .input-with-label label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: white;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box .input-with-label input:focus ~ label,
+.input-box .input-with-label input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #2ea101;
+  font-size: 12px;
+}
+
+/* All-Users */
+.all-users-container {
+  display: flex;
+  color: #1a1a1a;
+  font-family: "Mingzat", sans-serif;
+}
+
+.heddings {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.all-users-content {
+  width: 100%;
+}
+
+.all-users-tables {
+  display: flex;
+  justify-content: space-evenly;
+}
