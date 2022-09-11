@@ -72,7 +72,17 @@
                                             <option value="Role 3">User</option>
                                         </select>
                                         <div>
-                                            <button class="all-users-submit-btn" type="submit-btn">Confirm</button>
+                                            <!-- Trigger/Open The Modal -->
+                                            <button id="all-users-submit-btn">Confirm</button>
+                                            <!-- The Modal -->
+                                            <div id="submit-model" class="modal">
+                                                <!-- Modal content -->
+                                                <div class="modal-content">
+                                                    <p class="pop-up-text">Are You Sure to Change Role</p>
+                                                    <button class="yes-btn" href="./All-Users.html">Yes</button>
+                                                    <button class="no-btn" href="./All-Users.html">No</button>
+                                                </div>
+                                            </div>
                                         </div>
                                         <span class="all-users-focus"></span>
                                     </div>
@@ -87,7 +97,17 @@
                                             <option value="Role 3">User</option>
                                         </select>
                                         <div>
-                                            <button class="all-users-submit-btn" type="submit-btn">Confirm</button>
+                                            <!-- Trigger/Open The Modal -->
+                                            <button id="all-users-submit-btn">Confirm</button>
+                                            <!-- The Modal -->
+                                            <div id="submit-model" class="modal">
+                                                <!-- Modal content -->
+                                                <div class="modal-content">
+                                                    <p class="pop-up-text">Are You Sure to Change Role</p>
+                                                    <button class="yes-btn" href="./All-Users.html">Yes</button>
+                                                    <button class="no-btn" href="./All-Users.html">No</button>
+                                                </div>
+                                            </div>
                                         </div>
                                         <span class="all-users-focus"></span>
                                     </div>
@@ -101,18 +121,59 @@
                                             <option value="Role 2">Admin</option>
                                             <option value="Role 3">User</option>
                                         </select>
-                                        <div>
-                                            <button class="all-users-submit-btn" type="submit-btn">Confirm</button>
-                                        </div>
-                                        <span class="all-users-focus"></span>
                                     </div>
-                                </td>
-                                <td>Danidu Herath</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                                    <div>
+                                        <!-- Trigger/Open The Modal -->
+                                        <button id="all-users-submit-btn">Confirm</button>
+                                        <!-- The Modal -->
+                                        <div id="submit-model" class="modal">
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                                <p class="pop-up-text">Are You Sure to Change Role</p>
+                                                <button class="yes-btn" href="./All-Users.html">Yes</button>
+                                                <button class="no-btn" href="./All-Users.html">No</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="all-users-focus"></span>
+                                </div>
+                            </td>
+                            <td>Danidu Herath</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </body>
+    </div>
+    <!-- TODO: when user click Yes, close and pop an ALERT "User Chaned Successful" -->
+    <script>
+          // Get the modal
+          var modal = document.getElementById("submit-model");
+
+          // Get the button that opens the modal
+          var btn = document.getElementById("all-users-submit-btn");
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("no-btn")[0];
+
+
+
+          // When the user clicks the button, open the modal
+          btn.onclick = function() {
+            modal.style.display = "block";
+          }
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+    </script>
+</body>
 </html>
