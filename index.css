@@ -1,3 +1,4 @@
+@import "./css/nav-bar.css";
 body {
   background-color: #1a1a1a;
   font-family: "Mingzat", sans-serif;
@@ -34,7 +35,7 @@ input::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
-input[type="number"] {
+input[type=number] {
   -moz-appearance: textfield;
 }
 
@@ -193,6 +194,18 @@ td {
   border: 2px solid rgb(160, 160, 160);
 }
 
+.all-users-submit-btn {
+  width: 70px;
+  height: 30px;
+  background: #1bb694;
+  font-size: 0.7rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 6px;
+}
+
 /*Dropdown to select role*/
 .all-users-select {
   -webkit-appearance: none;
@@ -331,13 +344,16 @@ td {
 .user-attendance-container {
   display: flex;
 }
+
 .user-attendance-input-group {
   display: flex;
   justify-content: space-between;
 }
+
 #boys-input {
   margin-right: 30px;
 }
+
 .user-attendence-avatar {
   box-sizing: border-box;
   width: 100px;
@@ -347,13 +363,15 @@ td {
   background-color: transparent;
   overflow: hidden;
 }
+
 .user-attendence-hedding {
   margin-bottom: 30px;
   text-align: center;
   color: white;
 }
+
 .user-attendence-btn {
-  width: 200px;
+  width: 130px;
   background: transparent;
   outline: 2px solid #4ad489;
   font-size: 1rem;
@@ -364,16 +382,19 @@ td {
   border-radius: 5px;
   color: #4ad489;
 }
+
 .user-attendence-btn-group {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.attendence-btn .user-attendence-btn:hover {
+
+.user-attendence-btn:hover {
   background: #4ad489;
   color: white;
   transition: 0.5s;
 }
+
 .user-attendence-input-box {
   width: 400px;
   padding: 40px;
@@ -383,10 +404,12 @@ td {
   border-radius: 10px;
   outline: 2px solid white;
 }
+
 /* fancy effect when clicking on input button */
 .user-attendence-input-box .user-attendence-input-with-label {
   position: relative;
 }
+
 .user-attendence-input-box .user-attendence-input-with-label input {
   width: 100%;
   padding: 10px 0;
@@ -410,28 +433,21 @@ td {
   transition: 0.5s;
 }
 
-.user-attendence-input-box
-  .user-attendence-input-with-label
-  input:focus
-  ~ label,
-.user-attendence-input-box
-  .user-attendence-input-with-label
-  input:valid
-  ~ label {
+.user-attendence-input-box .user-attendence-input-with-label input:focus ~ label,
+.user-attendence-input-box .user-attendence-input-with-label input:valid ~ label {
   top: -20px;
   left: 0;
   color: #2ea101;
   font-size: 12px;
 }
-.user-btn {
-  width: 250pc;
-}
-/*<=====================================================>*/
-/** user-old-attandance **/
+
+/* User Old Attendance */
 #user-old-attendance-container {
   color: black;
 }
 
+/*<=====================================================>*/
+/** user-old-attandance **/
 .user-old-attandance-container {
   display: flex;
   color: #1a1a1a;
@@ -538,8 +554,6 @@ main {
   position: fixed;
   margin-top: -0.2vh;
   width: 214vh;
-  block-size: -webkit-fit-content;
-  block-size: -moz-fit-content;
   block-size: fit-content;
   border: 0.2vh solid white;
   margin-left: -2.4vh;
@@ -685,16 +699,6 @@ main footer input {
   background-color: #5e616a;
 }
 
-main footer input::-moz-placeholder {
-  color: black;
-  font-family: "Mingzat", sans-serif;
-}
-
-main footer input:-ms-input-placeholder {
-  color: black;
-  font-family: "Mingzat", sans-serif;
-}
-
 main footer input::placeholder {
   color: black;
   font-family: "Mingzat", sans-serif;
@@ -705,4 +709,6 @@ main footer img {
   margin-top: 1.6vh;
   height: 30px;
   cursor: pointer;
-} /*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,3 +1,5 @@
+@import "./css/nav-bar.css";
+
 $primary-bgcolor: #1a1a1a;
 $bg-color-1: #4ad489;
 $bgcolor-2: #009879;
@@ -179,6 +181,18 @@ input[type="number"] {
 th,
 td {
   border: 2px solid rgb(160, 160, 160);
+}
+.all-users-submit-btn {
+  width: 70px;
+  height: 30px;
+  background: #1bb694;
+  font-size: 0.7rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  // padding: 0 1em 0 1rem;
+  text-align: center;
+  border-radius: 6px;
 }
 /*Dropdown to select role*/
 .all-users-select {
