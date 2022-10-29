@@ -18,6 +18,4 @@ Email : kumudunaram@gmail.com
 
 #### @Danidu2Herath
 
-#### @nirmal-developer
-
 #### @Thevindu-Senanayake
